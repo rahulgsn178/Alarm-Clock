@@ -84,7 +84,7 @@ alarmsList.addEventListener('click', (event) => {
 
 // also need to delete the alarm from the array
 function remove(value) {
-    alarms.filter((time) => {
+    alarms = alarms.filter((time) => {
         return value != time;
     });
     console.log('successfully removed from the array');
