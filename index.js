@@ -5,7 +5,7 @@ alarms = [];
 
 var setAlarm = document.querySelector('.setAlarm');
 
-var audio = new Audio('http://www.cooperfulleon.com/sites/cooperfulleon.com/files/sounder_tones/standard/cooper_fulleon_sounder_tone_2.wav');
+var audio = new Audio('https://samplelib.com/lib/preview/mp3/sample-15s.mp3');
 // function for ringing the alarm
 function ringAlarm() {
     audio.play();
