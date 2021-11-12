@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type= "text/css" href="style.css">
+        <title>Alarm Clock</title>
+    </head>
+    <body>
+        <div id="clockface">
+            <div id="currentTime">Current Time:</div>
+            <div id="timebox">
+            </div>
+            
+            <form class="setAlarm">
+                <div class="setting-alarmFields">
+                    <input type="number" id="hours" min="0" max="23" placeholder="HH" required>
+                    <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
+                    <input type="number" id="seconds" min="0" max="59" placeholder="SS" required>   
+                       
+                </div>
+
+                <div class="set-btn">
+                    <button type="submit" class="btn btn-success"  id="put-alarm"> SET ALARM </button>
+                    <button type="button" class="btn btn-danger" id="stop-alarm"> STOP ALARM </button>
+
+                </div>
+
+
+            </form>
+
+            <section class="allAlarms">
+                <h1>My Alarms</h1>
+                <ul id="alarms-list">
+                   
+                </ul>
+            </section>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>  

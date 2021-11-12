@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(109, 103, 103);
+    color: black;
+    font-family:monospace;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+
+#clockface {
+    width: 500px;
+    height: 700px;   
+    border-radius: 2rem 2rem;
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    background-color: rgb(218, 221, 34);
+    border: double black 5px;
+    overflow: hidden;
+    
+}
+
+#currentTime {
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#timebox {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.setting-alarmFields {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+}
+
+.set-btn {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.setTime {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    margin: 0px;
+    font-weight: bold;
+    position: absolute;
+    top: 26%;
+    left: 5%;
+}
+
+#alarms-list {
+    position: absolute;
+    top: 32%;
+    left: 7%;
+    font-weight: lighter;
+    font-size: 30px;
+    list-style: none;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    position: relative;
+    font-size: 1rem;
+}
+
+#dlt-button {
+    position: absolute;
+    left: 160%;
+    top: 25%;
+}
+
