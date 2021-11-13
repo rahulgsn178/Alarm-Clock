@@ -16,9 +16,9 @@
             
             <form class="setAlarm">
                 <div class="setting-alarmFields">
-                    <input type="number" id="hours" min="0" max="23" placeholder="HH" required>
-                    <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
-                    <input type="number" id="seconds" min="0" max="59" placeholder="SS" required>   
+                    <input type="number" id="hours" min="0" max="23" placeholder="HH" onkeyup="jump(this, 'minutes')" required>
+                    <input type="number" id="minutes" min="0" max="59" placeholder="MM" onkeyup="jump(this, 'seconds')" required>
+                    <input type="number" id="seconds" min="0" max="59" placeholder="SS" onkeyup="jump(this, 'hours')" required>   
                        
                 </div>
 

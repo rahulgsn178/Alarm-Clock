@@ -8,6 +8,7 @@ var setAlarm = document.querySelector('.setAlarm');
 var audio = new Audio('https://samplelib.com/lib/preview/mp3/sample-15s.mp3');
 // function for ringing the alarm
 function ringAlarm() {
+    audio.autoplay = true;
     audio.play();
     // alert('Alarm is Ringing!!!!!!');
     console.log('Alarm is Ringing !!!!!!');
@@ -89,6 +90,13 @@ function remove(value) {
     });
     console.log('successfully removed from the array');
     console.log(alarms);
+}
+
+// for automatically move cursor from one input to another in form
+function jump(field, automove) {
+    if(field.value.length === 2) {
+        document.getElementById(automove).focus();
+    }
 }
 
 
