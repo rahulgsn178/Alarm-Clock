@@ -41,7 +41,7 @@ function format(mytime) {
         mytime %= 10;
         return '0'+mytime;
     }
-    else return mytime;
+    else return mytime%(mytime+1);
 }
 
 // event to add Alarm after submission of form
